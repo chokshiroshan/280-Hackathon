@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { Button } from '@mui/material';
 export const NewSideBar = (props) => {
   const selectCountry = (e) => {
     e.preventDefault();
@@ -111,6 +112,31 @@ export const NewSideBar = (props) => {
           <br />
           <br />
 
+
+          <div class="w3-container">
+        <h5>Crops</h5>
+        </div>
+        <div class="w3-bar-block">
+          <div
+            class="w3-bar-item w3-button w3-padding "
+            onClick={() => props.sidebarButtonClick('BANANA')}
+          >
+            <i class="fa fa-users fa-fw"></i>  Bananas
+          </div>
+          <div
+            class="w3-bar-item w3-button w3-padding "
+            onClick={() => props.sidebarButtonClick('MANGO')}
+          >
+            <i class="fa fa-users fa-fw"></i>  Mangos
+          </div>
+          <div
+            class="w3-bar-item w3-button w3-padding "
+            onClick={() => props.sidebarButtonClick('WALNUT')}
+          >
+            <i class="fa fa-users fa-fw"></i>  Walnuts
+          </div>
+          </div>
+
           <div class="w3-container">
             <button
               class="w3-btn w3-blue w3-round-large"
@@ -127,12 +153,13 @@ export const NewSideBar = (props) => {
               style={{ width: '100%' }}
             >
               <Link to="/govtrepresentative" style={{ textDecoration: 'None' }}>
-                Predict
+                Yield
               </Link>
             </button>
           </div>
         </div>
       </nav>
+      
     </>
   );
 };

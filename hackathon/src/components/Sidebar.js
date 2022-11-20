@@ -79,7 +79,7 @@ const Sidebar = (props) => {
               style={{ width: '100%' }}
             >
               <Link to="/govtrepresentative" style={{ textDecoration: 'None' }}>
-                Predict
+                Yield
               </Link>
             </button>
           </SidebarWrap>
